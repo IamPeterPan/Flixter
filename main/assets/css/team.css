@@ -1,0 +1,65 @@
+/*
+    CSS FOR: team.html
+    Author: Anojini
+*/
+
+
+/*styling the container where the image and description is shown*/
+.demo-2 {
+    position: relative;
+    width: 260px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    background-color: rgba(41, 113, 178, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.demo-2 p,.demo-2 h2 {
+    color: white;
+    padding: 10px;
+    left: -20px;
+    top: 20px;
+    position: relative
+}
+
+.demo-2 p {
+    font-family: 'Lato',serif;;
+    font-size:15px;
+    line-height:18px;
+    margin:0;
+}
+        
+.demo-2 h2 {
+    font-size:20px;
+    line-height:20px;
+    margin:0;
+    font-family:'Lato'
+}
+        
+/*adding effects to the pictures displayed and adding transition effects*/
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+
+}
+        
+/*adding hover effect */
+.effect img.top:hover {
+    bottom:-150px;
+    padding-top:100px
+}
+        
+/*adjusting the margins of the images displayed*/
+.pics{
+    margin-top:5cm;
+    margin-left:2cm;
+}

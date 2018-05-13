@@ -1,0 +1,542 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Stylesheet" type="text/css" href="assets/css/footer.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+<style>
+    body{
+        background-color: black;
+    }
+    /***Creator from style.css**/
+            .creator {
+            font-family: 'Lato',serif;
+        background-color: rgba(41, 113, 178, 0.8);
+        color: #fff;
+        padding: 25px;
+    }
+
+    .creator h6{
+        font-size: 20px;
+    }
+
+    .creator img {
+        opacity: 0.9;
+        width: 150px;
+        border-radius: 200px;
+    }
+    /**Navigation**/
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color:  black;
+        
+    }
+
+    nav ul .logo {
+        float: left;
+        width: 20%;
+        margin: 20px;
+    }
+
+nav li {
+    float: right;
+    font-family:   "Lato", sans-serif;
+  padding: 0018;
+    font-size: 20px;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    color: ghostwhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    
+}
+    
+
+nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: midnightblue;
+    
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,7,0.2);
+    
+     background-color: rgba(0, 0, 0, 0.5);
+    
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    ul li a:hover:not(.active) {
+    background-color: red;
+}
+    .active {
+    background-color: #4CAF50;
+}
+ a.d1:hover,a.d1:active{font-size: 150%;}
+    a.d2:hover,a.d2:active{font-size: 150%;}
+     a.d3:hover,a.d3:active{font-size: 150%;}
+    /**End Of Navigation**/
+    img{
+       
+        
+    padding: 6px;
+    width: 150px;
+        background-size: cover;
+         position: relative;
+       
+    }
+    .container{
+        float: left;
+    }
+    
+ .p{
+        font-family: "Lato", sans-serif;
+        font-size: 89;
+        color: azure;
+     text-align: center;
+    }
+    
+    h1{color:white;
+    font-family: "Lato", sans-serif;
+     text-align: center;
+    float: left;
+   
+          letter-spacing: 5px;
+        font-size: 21;
+    color: white;
+        padding: 00018;
+    
+    }
+      
+     .popup-window {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-image:url(images/QisDY48.png);
+            background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+        }
+     .popup-window-content {
+            position: relative;
+            background-color:whitesmoke;
+            margin: auto;
+            padding: 03;
+            border: 1px solid #888;
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,7,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.3s;
+            animation-name: animatetop;
+            animation-duration: 0.3s
+        }
+
+        @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .popup-window-header {
+            padding: 30px 20px;
+            background-color: red;
+            color: silver;
+            text-align: center;
+            -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 7s infinite;
+            
+        }
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+        .popup-window-body {padding: 20px 16px;}
+
+        .popup-window-footer {
+            padding: 20px 30px;
+        }
+        .image {
+            opacity: 0.5;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+      .middle {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+        }
+username{
+        font-size:33;
+    }
+
+
+    
+    </style>
+     <body style="margin:0;">
+   
+
+<nav>
+<ul>
+    <a href="index.html">
+        <img class="logo" src="assets/img/logo.png">
+    </a>
+    <h1 align="center">Add A Comment</h1>
+    <li><a href="movies.html">Browse Movies</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Go To</a>
+
+        <div class="dropdown-content">
+            <a class="d1" href="gallery.html">Gallery</a>
+            <a class="d1" href="quiz.html">Quiz</a>
+            <a class="d3" href="team.html">Team</a>
+            <a class="d2" href="feedback.html">Feedback</a>
+        </div>
+
+        <li><a href="index.html">Home</a></li>
+    </li>
+</ul>
+</nav>
+    
+   <img src="assets/img/comment.jpg" class="image" style="width:100%; height:100%">
+    
+    <body onload="document.registration.userid. focus();">
+  <div class="middle">
+
+<form name='registration' onSubmit="return formValidation();">
+
+        
+         <br><br>
+    <font size="6"><label for="username" align="center" style="color:white" ><b>Enter your name:</b></label></font>
+        <input type="text" name="username" size="50" if="username"/><br><br>
+
+        <font size="6"><label for="rate" style="color:white"><b>How would you rate us? :</b></label></font>
+        <select name="rate" id="rate">
+            <option selected="" value="Default" style = "font-size:20"><b>Select your rating here</b></option>
+            <option value="Impressed">Impressed</option>
+            <option value="Good">Good. Could use some work</option>
+            <option value="Not very satified">Not very satified</option>
+            <option value="Worst">Worst site ever!</option>
+
+        </select><br><br>
+        <font size="6"><label for="email" style="color:white"><b>Your email address here:</b></label></font>
+        <input type="text" name="email" size="50" id="email" /><br><br>
+
+        <font size="6"><label for="comments" style="color:white"><b>Enter your feedback here:</b></label></font>
+        <textarea name="desc" id="desc"></textarea><br><br>
+        <input type="submit" style="color:black; font-size: 32px;" name="submit"  value="Submit" />
+    
+</form>
+</div>
+<!--Parallax Section-->
+        <div class="creator">
+            <center>
+                <img src="assets/img/rishoni.png" />
+                <h6>Rishoni - 2016357</h6>
+            </center>
+        </div>
+        <!--Parallax Section-->
+        <!--Begin Footer-->
+        <footer>
+            <div class="up">
+                <div class="cols">
+                    <img src="assets/img/logo-big.png" alt="Flixster Logo - Large" /><br>
+                    <b>Flixster Inc.</b><br> Movie Review and Movie Store Website<br> Designed for Web Design and Development
+                    Coursework
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li><a href="index.html" alt="Homepage">Home</a></li>
+                        <li><a href="movies.html" alt="Browse Movies">Browse Movies</a></li>
+                        <li><a href="shop.html" alt="Shopping Cart">Shop</a></li>
+                        <li><a href="gallery.html" alt="Gallery">Gallery</a></li>
+                        <li><a href="quiz.html" alt="Quiz">Quiz</a></li>
+                        <li><a href="team.html" alt="Team - Student Details">Team</a></li>
+                        <li><a href="feedback.html" alt="Feedback">Feedback</a></li>
+                        <li><a href="sitemap.html" alt="Website Sitemap">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>Copyright &copy; 2017 - Web Design and Development Coursework</p>
+            </div>
+        </footer>
+        <!--End Footer-->
+<div name="myModal" id="myModal" class="popup-window">
+        
+
+    <div class="popup-window-content">
+        <div class="popup-window-header">
+            <span class="close">&times;</span>
+            <h2>User's Feedback</h2>
+        </div>
+        <div class="popup-window-body" id="popup-window-body1">
+            <p id="username">
+
+            </p>
+            <p id="emailadd">
+
+            </p>
+
+            <p id="rrate">
+
+            </p>
+
+            <p id="des">
+
+            </p>
+
+        </div>
+        <div class="popup-window-footer">
+
+            <button id="ok">OK</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="thankyou" class="popup-window">
+
+
+    <div class="popup-window-content">
+        <div class="popup-window-header">
+            <span class="close">&times;</span>
+            <h2>Feedback Recieved</h2>
+        </div>
+        <div class="popup-window-body">
+            <p>Thank you for your valueble time.</p>
+        </div>
+        <div class="popup-window-footer">
+
+            <button id="ok1">OK</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var username=document.getElementById("username");
+    var emalladd=document.getElementById("emailadd");
+    var descrip=document.getElementById("des");
+    var rrate=document.getElementById("rrate");
+
+    var modal = document.getElementById('myModal');
+    var thanyou = document.getElementById('thankyou');
+
+    var btncancel = document.getElementById("cancel");
+    var btnok = document.getElementById("ok");
+
+
+
+    var btnok1 = document.getElementById("ok1");
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    btncancel.onclick = function() {
+        modal.style.display = "none";
+    }
+    btnok1.onclick = function() {
+        document.getElementById('thankyou').style.display = "none";
+
+    }
+
+
+    btnok.onclick = function() {
+
+        document.getElementById('thankyou').style.display = "block";
+        modal.style.display = "none";
+        clear();
+    }
+
+
+    function message() {
+        document.getElementById('myModal').style.display = "block";
+
+    }
+
+
+    span.onclick = function() {
+        modal.style.display = "none";
+        thankyou.style.display = "none";
+    }
+
+
+    window.onclick = function(event) {
+
+        if (event.target == thankyou) {
+            thankyou.style.display = "none";
+        }
+    }
+
+    function formValidation()
+    {
+
+        var uname = document.registration.username;
+
+        var urate = document.registration.rate;
+
+        var uemail = document.registration.email;
+        var dec = document.registration.desc;
+        var userrating="";
+
+
+
+        if(allLetter(uname))
+        {
+            if(ValidateEmail(uemail))
+            {
+                if(ratevalue(urate))
+                {
+                    confirm("User name: " +uname.value+ "\n Email: "+uemail.value+"\n Rating "+urate.value);
+
+
+                    message();
+                    username.innerHTML="User name: " +uname.value;
+                    emalladd.innerHTML="Email address: " +uemail.value;
+                    descrip.innerHTML="Comment: "+dec.value;
+                    rrate.innerHTML="User rating: "+urate.value;
+
+                }
+            }
+        }
+
+
+
+        return false;
+
+    }
+    function allLetter(uname)
+    {
+        var letters = /^[A-Za-z]+$/;
+        if(uname.value.match(letters))
+        {
+            return true;
+        }
+        else
+        {
+            alert('Username can only contain alphabet characters');
+            uname.focus();
+            return false;
+        }
+    }
+
+
+
+    function ratevalue(urate)
+    {
+        if(urate.value == "Default")
+        {
+            alert('Please select your rating');
+            urate.focus();
+            return false;
+        }
+        else
+        {
+            return true;
+
+        }
+    }
+
+
+    function ValidateEmail(uemail)
+    {
+        var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(uemail.value.match(emailformat))
+        {
+            return true;
+        }
+        else
+        {
+            alert("Please enter a valid email address!");
+            uemail.focus();
+            return false;
+        }
+    }
+
+    function clear(){
+        document.registration.username.value="";
+        document.registration.email.value=""
+        document.registration.desc.value=""
+        document.registration.rate.value="Default"
+    }
+
+</script>
+
+
+        
+        
+        
+        
+     
+
+    
+
+    
+    </body>
+</html>

@@ -1,0 +1,366 @@
+/*
+    CSS FOR: Entire Website
+    Author: All Students
+*/
+
+/*Main CSS Content*/
+
+html,body{
+    width: 100%;
+    height:100%;
+    top: 0;
+}
+
+body {
+    margin: 0;
+    background: url(../img/bg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/**Presentation Page**/
+
+#presentation {
+    padding-top:15%;
+    width: 100%;
+    position:relative;
+}
+
+
+/**End Of Presentation**/
+
+
+/*Website Breadcrumb*/
+
+.breadcrumb {
+    font-family: 'Gothm Bold',serif;
+    background-color: rgba(41, 113, 178, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.breadcrumb h1{
+    margin-left: 5%;
+    font-size: 40px;
+    color: #fff;
+}
+
+.breadcrumb a {
+    color: #bdc3c7;
+}
+
+@media only screen and (max-width: 900px) {
+    .breadcrumb h1 {
+      font-size: 40px;
+    }
+}
+
+/*End of Website Breadcrumb*/
+
+/*Links*/
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/**End Of Links**/
+
+/**Main**/
+.container {
+    width:100%;
+    display: table;
+}
+
+main,aside{
+    display: table-cell;
+    resize:none;
+}
+
+main {
+    background-color: #ffffff;
+    padding-bottom: 175px;
+    width: 75%;
+}
+
+/*SideBar*/
+aside {
+    height: 100%;
+    padding: 5px;
+    background-color: #fff;
+    /*border-left: 4px solid #666;*/
+    text-align: center;
+    -webkit-box-shadow: -3px 0px 18px 0px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: -3px 0px 18px 0px rgba(50, 50, 50, 0.1);
+    box-shadow: -3px 0px 18px 0px rgba(50, 50, 50, 0.1);
+}
+aside .month-pick img {
+    width: 350px;
+    height: auto;
+}
+
+aside .month-pick a {
+    font-family: 'Gotham Book', serif;
+    text-transform: uppercase;
+    background-color: rgba(41, 113, 178, 1);
+    color: #fff;
+    padding: 15px;
+}
+
+aside .month-pick a:hover {
+    background-color: rgba(41, 113, 178, 0.8);
+}
+
+aside hr {
+    width: 10%;
+}
+
+aside ul {
+    font-family: 'Lato',serif;
+    font-size: 18px;
+    text-align: left;
+    list-style: none;
+}
+
+aside p {
+    font-family: 'Lato',serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+aside ul li a{
+    color: #000;
+}
+
+aside ul li a:hover {
+    color: #111;
+}
+
+/**Responsive aside**/
+@media only screen and (max-width: 1200px) {
+    aside {
+        display: table-row;
+    }
+
+    aside ul {
+        text-align: center;
+    }
+}
+
+
+/***Movies Section in MAIN***/
+
+.bar {
+    width: 5%;
+}
+
+.members {
+    font-family: 'Gotham Light',serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    bottom:5px;
+    text-align:center;
+    color: #bdc3c7;
+}
+
+.carousel {
+    margin:auto;
+    display: block;
+    padding-bottom: 3%;
+}
+
+.posmovie {
+    height:250px;
+    width:175px;
+    position: relative;
+    margin-right: 10px;
+    display:inline-block;
+}
+
+#title {
+    font-family: 'Lato',serif;
+    color: #34495e; 
+    font-size: 16px;
+}
+
+#title:hover {
+    color: #2980b9;
+}
+
+/**All Movies**/
+
+article {
+    margin: 20px;
+    overflow:hidden;
+    width: 75%;
+    -webkit-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+    width: 25%;
+    float: left;
+}
+
+article .desc {
+    width: 70%;
+    text-align: justify;
+    float: left;
+    margin: 20px;
+}
+
+article .desc h4 {
+    margin: 0;
+}
+
+article #details {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+article #crew {
+    font-weight: 700;
+}
+
+article p {
+    font-size: 14px;
+}
+
+article a {
+    font-family: 'Gotham Book', serif;
+    text-transform: uppercase;
+    background-color: rgba(41, 113, 178, 1);
+    color: #fff;
+    padding: 15px;
+    margin: 15px;
+    float: right;
+}
+
+article a:hover {
+    background-color: rgba(41, 113, 178, 0.8);
+}
+
+
+/**End Of All Movies**/
+
+/**End Of Main**/
+
+/**Footer**/
+
+.creator {
+    font-family: 'Gothm Bold',serif;
+    background-color: rgba(41, 113, 178, 0.8);
+    color: #fff;
+    padding: 25px;
+}
+
+.creator h6{
+    font-size: 20px;
+}
+
+.creator img {
+    opacity: 0.9;
+    width: 150px;
+    border-radius: 200px;
+}
+
+/**Enf Of Footer**/
+
+#team {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+/**Position **/
+
+#right{
+    float:right;
+}
+
+#left { 
+    float:left;
+    border-right: 1px solid rgba(0,0,0,.15);
+}
+
+#center {
+    text-align: center;
+}
+
+/**End of Position**/
+
+/*Colours*/
+.cloud{
+    color: #ecf0f1;
+}
+
+.black{
+    color: #000;
+}
+
+/*** Hover Movies Images CSS ***/
+
+.img__description_layer {
+    font-family: 'Open Sans Condensed',serif;
+    font-weight:400;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.posmovie:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description {
+    transition: .5s;
+}
+
+
+/*** End ***/
+
+/*Our Team CSS*/
+
+.member {
+    background-color: #fff;
+}
+
+/**Messages*/
+
+.error {
+    color: #e74c3c;
+}
+
+.success {
+    color: #2ecc71;
+}

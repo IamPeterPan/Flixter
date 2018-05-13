@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+    <title>Gallery | Flixster</title>
+    <link rel="Stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/fonts.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/footer.css"/>
+    <link rel="Stylesheet" type="text/css" href="assets/css/gallery.css"/>
+    <script type="text/Javascript" src="assets/js/main.js"></script>
+    <script type="text/Javascript" src="assets/js/gallery.js"></script>
+    <!--Website Meta Description-->
+    <meta name="author" content="Azim Mohammad">
+    <meta name="description" content="View all the images of latest movies">
+    <meta name="keywords" content="gallery, images, color, change, font, size, increase">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Website Faviconn-->
+    <link rel="shortcut icon" href="assets/img/popcorn.png" type="image/x-icon">
+    <!--Internal Stylesheet-->
+    <style>
+        #changeStyle {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Website Header-->
+    <header>
+        <div id="#top"></div>
+        <!--Website Navigation-->
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <img class="logo" src="assets/img/logo.png">
+                </a>
+                <li><a href="movies.html">Browse Movies</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Go To</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="team.html">Team</a>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                </li>
+            </ul>
+        </nav>
+        <!--End of Website Navigation-->
+        <div class="breadcrumb">
+            <h1><a href="index.html">Home</a> \ Gallery</h1>
+        </div>
+    </header>
+    <!--End of Website Header-->
+    <div class="container">
+        <!--Website Content-->
+        <main id="main">
+            <center>
+                <!--Gallery - Images-->
+                <div id="gallery">
+                    <h2>Gallery</h2>
+                    <div id="form">
+                        <form name="gallery">
+                            <img src="assets/img/movie-stills/logan-5.jpg" alt="Logan Movie Still 1" onmouseover="displayImage(this)" id="thumbnail"
+                            />
+                            <img src="assets/img/movie-stills/logan-2.jpg" alt="Logan Movie Still 2" onmouseover="displayImage(this)" id="thumbnail"
+                            />
+                            <img src="assets/img/movie-stills/logan-1.jpg" alt="Logan Movie Still 3" onmouseover="displayImage(this)" id="thumbnail"
+                            />
+                            <img src="assets/img/movie-stills/logan-3.jpg" alt="Logan Movie Still 4" onmouseover="displayImage(this)" id="thumbnail"
+                            />
+                            <img src="assets/img/movie-stills/logan-4.jpg" alt="Logan Movie Still 5" onmouseover="displayImage(this)" id="thumbnail"
+                            />
+                            <img src="assets/img/movie-stills/logan-5.jpg" alt="Logan Movie Still 1" onmouseover="displayImage(this)" id="thumbnail"
+                            />
+                            <br />
+                            <img src="assets/img/movie-stills/spider-man-homecoming-1.jpg" alt="Spider-Man:Homecoming Still 1" onmouseover="displayImage(this)"
+                                id="thumbnail" />
+                            <img src="assets/img/movie-stills/spider-man-homecoming-2.jpg" alt="Spider-Man:Homecoming Still 2" onmouseover="displayImage(this)"
+                                id="thumbnail" />
+                            <img src="assets/img/movie-stills/spider-man-homecoming-3.jpg" alt="Spider-Man:Homecoming Still 3" onmouseover="displayImage(this)"
+                                id="thumbnail" />
+                            <img src="assets/img/movie-stills/spider-man-homecoming-4.jpg" alt="Spider-Man:Homecoming Still 4" onmouseover="displayImage(this)"
+                                id="thumbnail" />
+                            <img src="assets/img/movie-stills/spider-man-homecoming-5.jpg" alt="Spider-Man:Homecoming Still 5" onmouseover="displayImage(this)"
+                                id="thumbnail" />
+                                <img src="assets/img/movie-stills/spider-man-homecoming-1.jpg" alt="Spider-Man:Homecoming Still 1" onmouseover="displayImage(this)"
+                                id="thumbnail" />
+                        </form>
+                        <form name="options" style="display:inline-block;">
+                            <div id="changeStyle">
+                                <h5>Change Color</h5>
+                                <label for="backgroundColor">
+                                Background : &nbsp;
+                                </label>
+                                <select name="backgroundColor" onchange="colorChangeBg(this.form)">
+                                    <option value="whitesmoke">White Smoke</option>
+                                    <option value="aliceblue">Alice Blue</option>
+                                    <option value="linen">Linen</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="lightgoldenrodyellow">Golden Yellow</option>
+                                </select>
+                                <br />
+                                <label for="textColor">
+                                Text : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                </label>
+                                <select name="textColor" onchange="colorChangeTxt(this.form)">
+                                    <option value="black">Black</option>
+                                    <option value="chocolate">Chocolate</option>
+                                    <option value="cornflowerblue">CornFlower Blue</option>
+                                    <option value="brown">Brown</option>
+                                    <option value="deeppink">Deep Pink</option>
+                            </select>
+                            <br />
+                            <input type="button" value="+" id="increase" name="increase" onclick="increaseSize();"/>
+                            <input type="button" value="-" id="decrease" name="decrease" onclick="decreaseSize();"/>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div id="largeImg">
+
+                    </div>
+                </div>
+            </center>
+        </main>
+        <!--No Sidebar-->
+    </div>
+    <!--Parallax Section-->
+    <div class="creator">
+        <center>
+        <img src="assets/img/azim.jpg" />
+        <h6>Azim Mohammed - 2015010</h6>
+        </center>
+    </div>
+    <!--Parallax Section-->
+    <!--Begin Footer-->
+    <footer>
+        <div class="up">
+            <div class="cols">
+                <img src="assets/img/logo-big.png" alt="Flixster Logo - Large"/><br>
+                <b>Flixster Inc.</b><br>
+                Movie Review and Movie Store Website<br>
+                Designed for Web Design and Development Coursework
+            </div>
+            <div class="cols">
+                <ul>
+                    <li><a href="home.html" alt="Homepage">Home</a></li>
+                    <li><a href="movies.html" alt="Browse Movies">Browse Movies</a></li>
+                    <li><a href="shop.html" alt="Shopping Cart">Shop</a></li>
+                    <li><a href="gallery.html" alt="Gallery">Gallery</a></li>
+                    <li><a href="quiz.html" alt="Quiz">Quiz</a></li>
+                    <li><a href="team.html" alt="Team - Student Details">Team</a></li>
+                    <li><a href="feedback.html" alt="Feedback">Feedback</a></li>
+                    <li><a href="sitemap.html" alt="Website Sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2017 - Web Design and Development Coursework</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+</body>
+
+</html>

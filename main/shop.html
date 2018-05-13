@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<head>
+    <title>Shop - Buy Movies | Flixster</title>
+    <link rel="Stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/fonts.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/footer.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/shop.css" />
+    <script type="text/Javascript" src="assets/js/shop.js"></script>
+    <script type="text/Javascript" src="assets/js/cart.js"></script>
+    <!--Website Meta Description-->
+    <meta name="author" content="Minoj Selvarasa">
+    <meta name="description" content="Buy some of the latest movies available in the market right now">
+    <meta name="keywords" content="buy, cart, shop, movies, dvd, digital, downloads">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Website Faviconn-->
+    <link rel="shortcut icon" href="assets/img/popcorn.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--Website Header-->
+    <header>
+        <div id="#top"></div>
+        <!--Website Navigation-->
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <img class="logo" src="assets/img/logo.png">
+                </a>
+                <li><a href="movies.html">Browse Movies</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Go To</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="team.html">Team</a>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                </li>
+            </ul>
+        </nav>
+        <!--End of Website Navigation-->
+        <div class="breadcrumb">
+            <h1><a href="index.html">Home</a> \ Shop</h1>
+        </div>
+    </header>
+    <!--End of Website Header-->
+    <div class="container">
+        <!--Website Content-->
+        <main>
+            <center>
+                <div class="merchandise">
+                    <h2>Buy Movies</h2>
+                    <div class="products">
+                        <!--Section One-->
+                        <div class="carousel">
+                            <div class="product">
+                                <img src="assets/img/poster/logan-img.jpg" alt="Logan Movie" onclick="movieModal('movie1')"/>
+                                <div class="desc">
+                                    <h5>Logan</h5>
+                                    <p id="price">
+                                        LKR 800
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="assets/img/poster/fight-club-img.jpg" alt="Fight Club Movie" onclick="movieModal('movie2')" />
+                                <div class="desc">
+                                    <h5>Fight Club</h5>
+                                    <p id="price">
+                                        LKR 700
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="assets/img/poster/let-me-in-img.jpg" alt="Let Me In Movie" onclick="movieModal('movie3')"/>
+                                <div class="desc">
+                                    <h5>Let Me In</h5>
+                                    <p id="price">
+                                        LKR 700
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="assets/img/poster/the-boss-baby-img.jpg" alt="The Boss Baby Movie" onclick="movieModal('movie4')"/>
+                                <div class="desc">
+                                    <h5>The Boss Baby</h5>
+                                    <p id="price">
+                                        LKR 900
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---Modal Box Section-->
+                    <!--First Movie-->
+                    <div id="movie1" class="modal">
+  		                <span class="close" onclick="closemodal('movie1')">&times;</span>
+                        <div class="content">
+                            <img src="assets/img/poster/logan-img.jpg" alt="Logan Movie Poster" id="movieImg"/>
+                            <div class="desc">
+                                <h2>Logan</h2>
+                                <p id="details">
+                                    R | 2h 17m | Action, Drama, Science-Fiction | 3 March 2017
+                                </p>
+                                <p>
+                                    In the near future, a weary Logan cares for an ailing Professor X, 
+                                    somewhere on the Mexican border. However, Logan's attempts to hide 
+                                    from the world, and his legacy, are upended when a young mutant arrives, pursued by dark forces.
+                                </p>
+                                <p id="price">
+                                    LKR 800
+                                </p>
+                                <form name="addToCart">
+                                    <label for"type">Type: </label>
+                                    <select name="type" onchange="chooseType(this.form,'800')">
+                                        <option value="1">DVD</option>
+                                        <option value="2">Digital</option>
+                                    </select><br />
+                                    <label for="qty">Quantity:  </label>
+                                    <input type="number" id="qty" name="qty" value = "0" onchange="setPrice(this.form,'800');"/><br />
+                                    <label for="price">Total:  </label>
+                                    <input type="text" id="txtTotal" name="txtTotal" style="opacity: 0.5;"/><br />
+                                    <label for"btnAdd"></label>
+                                    <input type="button" id="btnAdd" name="btnAdd" value="Add To Cart" onclick="addCart(this.form,'Logan','800')"/>
+                                </form>
+                            </div>
+                        </div>
+	                </div>
+                    <!--Second Movie-->
+                    <div id="movie2" class="modal">
+  		                <span class="close" onclick="closemodal('movie2')">&times;</span>
+                        <div class="content">
+  		                    <img src="assets/img/poster/fight-club-img.jpg" alt="Fight Club Movie Poster"/>
+  		                    <div class="desc">
+                                <h2>Fight Club</h2>
+                                <p id="details">
+                                    R | 2h 19m | Thriller, Drama | 15 March 1999
+                                </p>
+                                <p>
+                                    An insomniac man who is an ordinary worker of a huge company, 
+                                    an IKEA buyer and classic consumer of capitalist system is very 
+                                    bored of his ordinary and routine life and meets with a person that 
+                                    is totally who he wants to be. And after that his life changes, 
+                                    with his new friend he creates a fight club that is gonna evolve 
+                                    very big movement all over country that even he can't imagine.
+                                </p>
+                                <p id="price">
+                                    LKR 700
+                                </p>
+                                <form name="addToCart">
+                                    <label for"type">Type: </label>
+                                    <select name="type" onchange="chooseType(this.form,'800')">
+                                        <option value="1">DVD</option>
+                                        <option value="2">Digital</option>
+                                    </select><br />
+                                    <label for="qty">Quantity:  </label>
+                                    <input type="number" id="qty" name="qty" onchange="setPrice(this.form,'700');" /><br />
+                                    <label for="price">Total:  </label>
+                                    <input type="text" id="txtTotal" name="txtTotal" readonly style="opacity: 0.5;"/><br />
+                                    <label for"btnAdd"></label>
+                                    <input type="button" id="btnAdd" name="btnAdd" value="Add To Cart" onclick="addCart(this.form,'Fight Club','800')"/>
+                                </form>
+                            </div>
+                        </div>
+	                </div>
+                    <!--Third Movie-->
+                    <div id="movie3" class="modal">
+  		                <span class="close" onclick="closemodal('movie3')">&times;</span>
+                        <div class="content">
+  		                    <img src="assets/img/poster/let-me-in-img.jpg" alt="Let Me In Movie Poster"/>
+  		                    <div class="desc">
+                                <h2>Let Me In</h2>
+                                <p id="details">
+                                    R | 1h 15m | Horror, Mystery, Drama | 1 October 2010
+                                </p>
+                                <p>
+                                    Owen is 12 years-old, his parents are no longer together 
+                                    and he has no friends. He's also being bullied at school 
+                                    and lives a dreary existence. Late one night he meets Abby, 
+                                    also 12, who has moved in next door. She doesn't say much 
+                                    about herself and doesn't go to school. Meanwhile, a detective 
+                                    is investigating a series of murders where people have been 
+                                    drained of their blood. Owen and Abby are lonely souls who 
+                                    find comfort in one another and Abby gives him the strength 
+                                    to face his tormentors. Abby has secrets as well that touch 
+                                    directly on the police investigation.
+                                </p>
+                                <p id="price">
+                                    LKR 700
+                                </p>
+                                <form name="addToCart">
+                                    <label for"type">Type: </label>
+                                    <select name="type" onchange="chooseType(this.form,'700')">
+                                        <option value="1">DVD</option>
+                                        <option value="2">Digital</option>
+                                    </select><br />
+                                    <label for="qty">Quantity:  </label>
+                                    <input type="number" id="qty" name="qty" onchange="setPrice(this.form,'700');" /><br />
+                                    <label for="price">Total:  </label>
+                                    <input type="text" id="txtTotal" name="txtTotal" readonly style="opacity: 0.5;"/><br />
+                                    <label for"btnAdd"></label>
+                                    <input type="button" id="btnAdd" name="btnAdd" value="Add To Cart" onclick="addCart(this.form,'Let Me In','700')"/>
+                                </form>
+                            </div>
+                        </div>
+	                </div>
+                    <!--Fourth Movie-->
+                    <div id="movie4" class="modal">
+  		                <span class="close" onclick="closemodal('movie4')">&times;</span>
+                        <div class="content">
+  		                    <img src="assets/img/poster/the-boss-baby-img.jpg" alt="The Boss Baby Movie Poster"/>
+  		                    <div class="desc">
+                                <h2>Boss Baby Movie Poster</h2>
+                                <p id="details">
+                                    PG | 1h 37m | Animation, Comedy, Family | 31 March 2017
+                                </p>
+                                <p>
+                                    A new baby's arrival impacts a family, told from 
+                                    the point of view of a delightfully unreliable narrator 
+                                    -- a wildly imaginative 7-year-old named Tim. The most 
+                                    unusual Boss Baby (Alec Baldwin) arrives at Tim's home in 
+                                    a taxi, wearing a suit and carrying a briefcase. 
+                                    The instant sibling rivalry must soon be put 
+                                    aside when Tim discovers that Boss Baby is 
+                                    actually a spy on a secret mission, and only he can 
+                                    help thwart a dastardly plot that involves an epic 
+                                    battle between puppies and babies.
+                                </p>
+                                <p id="price">
+                                    LKR 900
+                                </p>
+                                <form name="addToCart">
+                                    <label for"type">Type: </label>
+                                    <select name="type" onchange="chooseType(this.form,'900')">
+                                        <option value="1">DVD</option>
+                                        <option value="2">Digital</option>
+                                    </select><br />
+                                    <label for="qty">Quantity:  </label>
+                                    <input type="number" id="qty" name="qty" onchange="setPrice(this.form,'900');" /><br />
+                                    <label for="price">Total:  </label>
+                                    <input type="text" id="txtTotal" name="txtTotal" readonly style="opacity: 0.5;"/><br />
+                                    <label for"btnAdd"></label>
+                                    <input type="button" id="btnAdd" name="btnAdd" value="Add To Cart" onclick="addCart(this.form,'The Boss Baby','900')"/>
+                                </form>
+                            </div>
+                        </div>
+	                </div>
+                    <!--CheckOut Modal Box-->
+                    <div id="checkOut" class="modal">
+  		                <span class="close" onclick="closemodal('checkOut')">&times;</span>
+                        <div class="content">
+                            <h3>Your Cart</h3>
+  		                    <div id="checkout">
+                               <!--JavaScript Generated Content - Products in your cart displayed here!-->
+                            </div>
+                            <form name="addToCart" id="checkoutForm">
+                                <label for="name">Name :</label>
+                                <input type="text" name="name" id="name"/><br />
+                                <label for="name">Email :</label>
+                                <input type="email" name="email" id="email"/><br />
+                                <label for="phNum">Phone Number :</label>
+                                <input type="text" name="phNum" id="phNum"/><br />
+                                <label for="address">Address :</label>
+                                <input type="text" name="address" id="address"/><br />
+                                <div id="checkoutTotal">
+                                    <!--JavaScript Generated Total and Quantity-->
+                                </div>
+                                <input type="button" id="btnCheckOut" name="btnCheckOut" value="Confirm" onclick="checkoutConfirm(this.form)" />
+                            </form>
+                        </div>
+	                </div>
+                    <!--CheckOut Message Modal Box-->
+                    <div id="checkOutMessage" class="modal">
+  		                <span class="close" onclick="closemodal('checkOutMessage')">&times;</span>
+                        <div class="content">
+                            <h3>Product Summary</h3>
+  		                    <div id="MessageCheckOut">
+                               <!--JavaScript Generated Content - CheckOut Success and Error Message Displayed Here-->
+                               <!--Products Displayed here-->
+                            </div>
+                            <div id="MessageTotal">
+                                    <!--JavaScript Generated Content - Total and a message-->
+                            </div>
+                        </div>
+	                </div>
+                    <!--End Modal Box Section-->
+                </div>
+            </center>
+        </main>
+        <aside>
+            <div class="your-cart">
+                <h3>Your Cart</h3>
+                <hr>
+                <br />
+                <div id="emptyCart">
+                    <h5>Empty Cart</h5>
+                    <!--JavaScript Generated Content-->
+                </div>
+                <div id="cart">
+                    <!--JavaScript Generated Content-->
+                </div>
+                <div id="total">
+                    <!--JavaScript Generated Content-->
+                </div>
+                <br />
+                <form>
+                    <input type="button" id="btnCheckout" name="btnCheckout" value="Checkout" onclick="checkOut()"/>
+                    <input type="button" id="btnReset" name="btnReset" value="Reset" onclick="resetCart();"/>
+                </form>
+            </div>
+        </aside>
+    </div>
+    <!--Parallax Section-->
+    <div class="creator">
+        <center>
+            <img src="assets/img/minoj.jpg" />
+            <h6>Minoj Selvarasa - 2016131</h6>
+        </center>
+    </div>
+    <!--Parallax Section-->
+    <!--Begin Footer-->
+    <footer>
+        <div class="up">
+            <div class="cols">
+                <img src="assets/img/logo-big.png" alt="Flixster Logo - Large"/><br>
+                <b>Flixster Inc.</b><br>
+                Movie Review and Movie Store Website<br>
+                Designed for Web Design and Development Coursework
+            </div>
+            <div class="cols">
+                <ul>
+                    <li><a href="home.html" alt="Homepage">Home</a></li>
+                    <li><a href="movies.html" alt="Browse Movies">Browse Movies</a></li>
+                    <li><a href="shop.html" alt="Shopping Cart">Shop</a></li>
+                    <li><a href="gallery.html" alt="Gallery">Gallery</a></li>
+                    <li><a href="quiz.html" alt="Quiz">Quiz</a></li>
+                    <li><a href="team.html" alt="Team - Student Details">Team</a></li>
+                    <li><a href="feedback.html" alt="Feedback">Feedback</a></li>
+                    <li><a href="sitemap.html" alt="Website Sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2017 - Web Design and Development Coursework</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+</body>
+
+</html>

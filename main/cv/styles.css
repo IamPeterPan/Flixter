@@ -1,0 +1,158 @@
+body { 
+    background: #f2f2f2; 
+    font-size: 62.5%; 
+    padding-bottom: 65px; 
+}
+
+#w h1 { 
+    font-family: 'Gotham Bold',serif;
+    color: #454545; 
+    font-size: 57px; 
+    margin-bottom: 6px; 
+}
+
+#w h2 { 
+    font-family: 'Gotham Medium',serif; 
+    color: #484848; 
+    font-size: 40px; 
+    margin-bottom: 10px; 
+}
+
+#w h3 { 
+    font-family: 'Gotham Medium',serif; 
+    color: #777; 
+    font-weight: normal; 
+    font-size: 28px; 
+    margin-bottom: 10px; 
+}
+#w h4 { 
+    font-family: 'Gotham Book',serif; 
+    color: #656565; 
+    font-weight: bold; 
+    font-size: 27px; 
+    margin-bottom: 4px; 
+}
+
+#w p { 
+    font-family: 'Lato',serif; 
+    font-weight: 400;
+    color: #565656; 
+    font-size: 15px; 
+    line-height: 1.4em; 
+    margin-bottom: 10px; 
+    padding-left: 35px; 
+}
+
+small { 
+    font-family: "Balthazar", "Droid Serif", serif; 
+    color: #656565; 
+    font-size: 1.6em; 
+    display: block; 
+    margin-bottom: 6px; 
+}
+
+ul { 
+    display: block;
+    list-style: none; 
+}
+
+ul li { 
+    padding-left: 45px; 
+    list-style-type: none; 
+    vertical-align: top; 
+    background: url('images/bullet.png') 25px 5px no-repeat; 
+    margin-bottom: 5px; 
+    font-family: 'Lato', serif; 
+    color: #666; 
+    font-size: 1.6em; 
+    line-height: 2.3em; }
+
+img { 
+    border: 0; 
+    max-width: 100%; 
+}
+
+a { 
+    color: #5582d6; 
+    text-decoration: none; 
+}
+a:hover { 
+    text-decoration: underline; 
+}
+
+/** Main Layout **/
+#w { 
+    margin-left:auto;
+    margin-right: auto; 
+    padding: 20px 40px; 
+    padding-top: 35px; 
+    background: #fff; 
+    min-width: 260px; 
+    max-width: 900px; 
+    border-bottom-right-radius: 8px; 
+    border-bottom-left-radius: 8px; 
+    -webkit-border-bottom-left-radius: 8px; 
+    -webkit-border-bottom-right-radius: 8px; 
+    -moz-border-radius-bottomleft: 8px; 
+    -moz-border-radius-bottomright: 8px; 
+}
+
+header { 
+    width: 100%; 
+}
+
+footer {
+    margin-top: 10px;
+    max-width: 980px;
+    min-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+footer p{
+    margin: 0;
+    font-family: 'Lato',serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/** Personal Information **/
+#info { 
+    float: left; margin-bottom: 12px; 
+}
+
+#photo { 
+    float: right;
+    width: 30%; 
+}
+
+#photo img { 
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/** Skill Set **/
+#skillset { 
+    display: block; 
+    float: left; 
+    margin-right: 30px; 
+}
+
+/** @group clearfix **/
+.clearfix:after { 
+    content: "."; 
+    display: block; 
+    clear: both; 
+    visibility: hidden; 
+    line-height: 0; 
+    height: 0; 
+}
+
+.clearfix { 
+    display: inline-block; 
+}

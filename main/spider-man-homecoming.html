@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head>
+    <title>Spider-Man:Homecoming | Browse Movies - All movies | Flixster</title>
+    <link rel="Stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/fonts.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/footer.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/css/movie.css"/>
+    <script type="text/Javascript" src="assets/js/movie.js"></script>
+    <!--Website Meta Description-->
+    <meta name="author" content="Minoj Selvarasa">
+    <meta name="description" content="Read the reviews about movies and also buy them at the lowest rates in Sri Lanka">
+    <meta name="keywords" content="movies, website, flixster, buy, latest, top, upcoming, reviews, ratings, imdb, gallery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Website Faviconn-->
+    <link rel="shortcut icon" href="assets/img/popcorn.png" type="image/x-icon">
+
+    <!--Internal Stylesheet-->
+    <style>
+        #gallery {
+            align-content: center;
+            text-align: center;
+        }
+        
+        #gallery img {
+            display: inline-block;
+        }
+
+        #modalImage img {
+            margin: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Website Header-->
+    <header>
+        <div id="#top"></div>
+        <!--Website Navigation-->
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <img class="logo" src="assets/img/logo.png">
+                </a>
+                <li><a href="movies.html">Browse Movies</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Go To</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="team.html">Team</a>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                </li>
+            </ul>
+        </nav>
+        <!--End of Website Navigation-->
+        <div class="breadcrumb">
+            <h1><a href="index.html" alt="HomePage">Home</a> \ <a href="movies.html" alt="Browse Movies">Browse Movies</a> \ Spider-Man:Homecoming</h1>
+        </div>
+    </header>
+    <!--End of Website Header-->
+    <!--Movie Box-->
+    <div class="movie">
+            <img src="assets/img/poster/spider-man-homecoming-img.jpg" class="left" alt="Spider-Man: Homecoming Poster" onclick="videoModal('https://www.youtube.com/embed/U0D3AOldjMU')"/>
+            <div class="desc">
+                <h1>Spider-Man:Homecoming</h1>
+                <p id="details">PG-13 | Action, Adventure, Science-Fiction | 2h 13m | 7 July 2017</p>
+                <span class="imdbRatingPlugin" data-user="ur61419466" data-title="tt2250912" data-style="p1">
+                        <a href="http://www.imdb.com/title/tt2250912/?ref_=plg_rt_1">
+                            <img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Spider-Man: Homecoming (2017) on IMDb" />
+                        </a>
+                    </span>
+                <script>
+                    (function (d, s, id) { var js, stags = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js"; stags.parentNode.insertBefore(js, stags); })(document, 'script', 'imdb-rating-api');
+                </script>
+                <p class="text" id="main">
+                    A young Peter Parker/Spider-Man begins to navigate his newfound identity as the web-slinging super hero Spider-Man. Thrilled
+                    by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the
+                    watchful eye of his new mentor Tony Stark. Peter tries to fall back into his normal daily routine - distracted
+                    by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when
+                    the Vulture emerges as a new villain, everything that Peter holds most important will be threatened.
+                </p>
+            </div>
+            <form>
+                <input type="button" value="+" id="increase" name="increase" onclick="increaseSize();"/>
+                <input type="button" value="-" id="decrease" name="decrease" onclick="decreaseSize();"/>
+            </form>
+        </div>
+    <div class="container">
+        <!--Website Content-->
+        <main>
+            <br />
+            <div id="gallery">
+                <h1>Gallery</h1>
+
+                <div class="images">
+                    <img src="assets/img/movie-stills/spider-man-homecoming-1.jpg" alt="Spider-Man:Homecoming Still 1" onclick="imageModal(this.src)"/>
+                    <img src="assets/img/movie-stills/spider-man-homecoming-2.jpg" alt="Spider-Man:Homecoming Still 2" onclick="imageModal(this.src)"/>
+                    <img src="assets/img/movie-stills/spider-man-homecoming-3.jpg" alt="Spider-Man:Homecoming Still 3" onclick="imageModal(this.src)"/>
+                    <img src="assets/img/movie-stills/spider-man-homecoming-4.jpg" alt="Spider-Man:Homecoming Still 4" onclick="imageModal(this.src)"/>
+                </div>
+            </div>
+
+            <!--Gallery Modal Box-->
+            <div id="video" class="modal">
+                <span class="close" onclick="closemodal()">&times;</span>
+                    <div id="modalContent">
+
+                    </div>
+            </div>
+
+            <!--Image Modal Box-->
+            <div id="image" class="modal">
+                <span class="close" onclick="closemodal()">&times;</span>
+                    <div id="modalImage">
+
+                    </div>
+            </div>
+        </main>
+        <aside>
+            <div class="sidebar">
+                <div class="cast">
+                    <h3>Cast</h3>
+                    <hr>
+                    <br />
+                    <ul>
+                        <li>Tom Holland<b> (Peter Parker/Spiderman) </b></li><br />
+                        <li>Micheal Keaton<b> (Adrian Toomes) </b></li><br />
+                        <li>Robert Downey Jr.<b> (Tony Star / Iron-man) </b></li><br />
+                        <li>Marisa Tomei<b> (Mary Parker) </b></li><br />
+                        <li>Donald Glover<b> (Aaron Davis) </b></li><br />
+                    </ul>
+                </div>
+                <div class="crew">
+                    <h3>Crew</h3>
+                    <hr>
+                    <br />
+                    <ul>
+                        <li><b>Director: </b>Jon Watts</li><br>
+                        <li><b>Produced: </b>Amy Pascal, Kevin Feige</li><br>
+                        <li><b>Screenplay: </b>Jonathan Goldstein</li><br>
+                        <li><b>Story: </b>Jonathan Goldstein</li><br>
+                        <li><b>Music: </b>Michael Giacchino</li><br>
+                        <li><b>Cinematography: </b>Salvatore Totino</li><br>
+                    </ul>
+                </div>
+                <br />
+                
+                
+                <br />
+            </div>
+        </aside>
+    </div>
+    <!--Parallax Section-->
+    <div class="creator">
+        <center>
+        <img src="assets/img/minoj.jpg" />
+        <h6>Minoj Selvarasa - 2016131</h6>
+        </center>
+    </div>
+    <!--Parallax Section-->
+    <!--Begin Footer-->
+    <footer>
+        <div class="up">
+            <div class="cols">
+                <img src="assets/img/logo-big.png" alt="Flixster Logo - Large"/><br>
+                <b>Flixster Inc.</b><br>
+                Movie Review and Movie Store Website<br>
+                Designed for Web Design and Development Coursework
+            </div>
+            <div class="cols">
+                <ul>
+                    <li><a href="home.html" alt="Homepage">Home</a></li>
+                    <li><a href="movies.html" alt="Browse Movies">Browse Movies</a></li>
+                    <li><a href="shop.html" alt="Shopping Cart">Shop</a></li>
+                    <li><a href="gallery.html" alt="Gallery">Gallery</a></li>
+                    <li><a href="quiz.html" alt="Quiz">Quiz</a></li>
+                    <li><a href="team.html" alt="Team - Student Details">Team</a></li>
+                    <li><a href="feedback.html" alt="Feedback">Feedback</a></li>
+                    <li><a href="sitemap.html" alt="Website Sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2017 - Web Design and Development Coursework</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <script type="text/Javascript">
+        var slideIndex = 0; 
+        showSlides(); 
+        function showSlides() { 
+            var i; var slides = document.getElementsByClassName("mySlides");
+            //get the slideshow section 
+            for (i =0; i< slides.length; i++) { 
+                slides[i].style.display="none" ;
+            }
+            slideIndex++;
+            if (slideIndex> slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display="block";
+            setTimeout(showSlides,10000);
+            // Change image every 10 seconds 
+        }
+
+        //Script to Grab ImdB rating
+        <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+        </script>
+        
+</body>
+
+</html>

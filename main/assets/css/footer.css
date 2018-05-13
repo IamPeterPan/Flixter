@@ -1,0 +1,78 @@
+/*
+    CSS FOR: Footer
+    Author: Minoj
+*/
+
+
+/*Footer Content*/
+footer{
+    background: url(../img/popcornF.png) no-repeat rgba(41, 113, 178, 1);
+    font-family:'Lato',sans-serif;
+    font-weight: 300;
+    color:#fff;
+    position:absolute;
+    -webkit-box-shadow: 0px -4px 20px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px -4px 20px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px -4px 20px 0px rgba(50, 50, 50, 0.2);
+    right: 0;
+    left: 0;
+    clear: both;
+    text-align:center;
+}
+
+footer img {
+    width: 25%;
+    margin: 2%;
+}
+
+footer ul{
+    margin: 5%;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+}
+
+footer ul li {
+    margin: 5%;
+    list-style-type: square;
+    display: inline-block;
+}
+
+footer ul a{
+    color: rgba(189, 195, 199,1.0);
+    text-decoration: none;
+}
+
+footer ul a:hover {
+    opacity: 0.8;
+}
+
+.upper-footer {
+    text-align:center;
+    width:100%;
+}
+
+footer .up {
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+}
+
+footer .cols {
+    margin: 25px;
+    float: left;
+    width: 30%;
+}
+
+
+#copyright {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #212121;
+    -webkit-box-shadow: 0px -4px 20px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px -4px 20px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px -4px 20px 0px rgba(50, 50, 50, 0.3);
+}
+
+/***/
+/*End of Footer*/

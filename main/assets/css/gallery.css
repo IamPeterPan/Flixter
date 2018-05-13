@@ -1,0 +1,54 @@
+/*
+    CSS FOR: Gallery
+    Author: Azim
+*/
+
+#main {
+    background-color: #ecf0f1;
+}
+
+/**Form Style*/
+#form {
+    font-family: 'Gotham Light',serif;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 25px;
+    width: 80%;
+    -webkit-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.1);
+}
+
+form {
+    display: inline-block;
+}
+
+/**End of Form Style*/
+
+#changeStyle {
+    display: inline-block;
+}
+
+#thumbnail {
+    opacity: 0.8;
+    margin: 5px;
+    float: left;
+    width: 15%;
+    height: 150px;
+    transition: 0.3s ease-in-out;
+}
+
+#thumbnail:hover {
+    opacity:1;
+    transform: scale(1.05);
+}
+
+#largeImg {
+    margin: 5%;
+    display: inline-block;
+    width: 70%;
+}
+
+#largeImg img{
+    width: 50%;
+}

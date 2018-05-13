@@ -1,0 +1,47 @@
+
+/*
+    CSS FOR: sitemap.html
+    Author: Azim & Minoj
+*/
+
+.sitemap {
+    width: 60%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.sitemap .column {
+    margin: 5%;
+    display: inline-block;
+    color: rgba(41, 113, 178, 0.8);
+}
+
+.sitemap .column h4 {
+    margin: 0;
+    text-align: left;
+}
+
+.sitemap .column a {
+    position: relative;
+    color: rgba(30, 136, 229, 1)
+}
+
+.sitemap .column a:hover {
+    color: rgba(30, 136, 229, 0.8);
+    text-decoration: underline;
+}
+
+.sitemap .column ul {
+    list-style: none;
+    float: left;
+    margin-top: 5px;
+    padding: 0;
+    text-align: left;
+    font-family: 'Lato',serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sitemap .column ul li a:hover {
+    text-decoration: none;
+}

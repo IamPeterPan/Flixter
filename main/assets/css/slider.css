@@ -1,0 +1,77 @@
+/*
+    CSS FOR: Slider in Browse Movies page
+    Re-used and modified from index page
+*/
+
+/* Slideshow container */
+.slideshow{
+  	max-width: 80%;
+  	position: relative;
+    margin: auto;
+    margin-top: 40px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    -webkit-box-shadow:inset 1px 1px 10px 1px rgba(0,0,0,0.6);
+    box-shadow:inset 1px 1px 10px 1px rgba(0,0,0,0.6);
+    padding: 20px;
+}
+
+.mySlides {
+    overflow: hidden;
+}
+
+.mySlides .desc {
+    width: 70%;
+    float: right;
+}
+
+.mySlides img{
+    float: left;
+    width: 30%;
+    top: 0;
+}
+
+.mySlides img:hover {
+    opacity: 0.8;
+}
+
+.mySlides p {
+    font-size: 16px;
+    font-family: 'Lato',serif;
+    font-weight: 300;
+    text-align: justify;
+    padding: 25px;
+}
+
+.mySlides a{
+    font-family: 'Gotham Bold', serif;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px;
+    width: 25%;
+    float: right;
+}
+
+.mySlides a:hover{
+    background-color: rgb(50, 140, 200);
+    border: 2px solid rgb(50, 140, 200);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

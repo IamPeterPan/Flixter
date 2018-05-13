@@ -1,0 +1,76 @@
+/*
+    CSS FOR: fonts of the entire website
+    Author: Minoj
+*/
+
+/*Fonts - Lato, Platfair Display*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
+
+@font-face {
+    font-family: "Gotham Light";
+    src: url(../fonts/gotham-light.ttf);
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url(../fonts/gotham-book.ttf);
+}
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url(../fonts/gotham-medium.ttf);
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url(../fonts/gotham-bold.ttf);
+}
+
+h1 {
+    font-size: 58px;
+    font-family: 'Gotham Bold', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 46px;
+    font-family: 'Gotham Bold', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: 'Gotham Bold', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Gotham Medium', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h5 {
+    font-size: 18px;
+    font-family: 'Gotham Book',serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: 'Gotham Book',serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 11px;
+    font-family: 'Lato', serif;
+    font-weight: 300;
+}
